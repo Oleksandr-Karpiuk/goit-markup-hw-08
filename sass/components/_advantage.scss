@@ -1,0 +1,35 @@
+.advantage {
+    padding-bottom: 0;
+}
+
+.advantage__list {
+    display: flex;
+    gap: 30px;
+}
+
+.advantage__item {
+    flex-basis: calc((100% - 30px * 3) / 4);
+}
+
+.advantage__icons {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--team-bcg-color);
+    border-radius: 4px;
+}
+
+.advantage__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantage__text {
+    color: var(--secondary-color);
+}

@@ -1,0 +1,26 @@
+.page-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: var(--logo-font);
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    color: var(--black-color);
+    
+    &--footer {
+        margin-bottom: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.page-logo__style {
+    color: var(--focus-color);
+
+    &--color {
+        color: var(--white-color);
+    }
+}
