@@ -37,12 +37,13 @@
   }
 }
 
+// ЗОБРАЖЕННЯ УСІХ СЕКЦІЙ ПОТРІБНО ДОПРАЦЮВАТИ
 .team__image {
   display: block;
 
   @media screen and (max-width: 767px) {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -55,6 +56,7 @@
     height: 260px;
   }
 }
+// -----------------------------------------------
 
 .team__member {
   padding-top: 30px;
