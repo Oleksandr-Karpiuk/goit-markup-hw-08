@@ -1,114 +1,118 @@
 .main-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: none;
+  border-radius: 4px;
+  background-color: var(--focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+
+  transition: background-color var(--duration) var(--timing-function);
+  &:hover {
+    background-color: #188ce8;
+  }
+  &:focus {
+    background-color: #188ce8;
+  }
+
+  &--smaller {
+    min-width: 200px;
+  }
+
+  @media screen and (min-width: 1200px) {
     min-width: 216px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-    border: none;
-    border-radius: 4px;
-    background-color: var(--focus-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--white-color);
-
-    transition: background-color var(--duration) var(--timing-function);
-    &:hover {
-        background-color: #188ce8;
-    }
-    &:focus {
-        background-color: #188ce8;
-    }
-
-    &--smaller {
-        min-width: 200px;
-    }
+  }
 }
 
 .page-footer__button {
-    gap: 10px;
+  gap: 10px;
 }
 
 .modal__button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 
-    background-color: var(--white-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: color var(--duration) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 
-    &:hover {
-        color: var(--focus-color);
-    }
-    
-    &:focus {
-        color: var(--focus-color);
-    }
+  &:hover {
+    color: var(--focus-color);
+  }
+
+  &:focus {
+    color: var(--focus-color);
+  }
 }
 
 .portfolio__button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 6px 22px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 22px;
 
-    border: none;
-    border-radius: 4px;
-    background-color: var(--team-bcg-color);
+  border: none;
+  border-radius: 4px;
+  background-color: var(--team-bcg-color);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 
-    transition: background-color var(--duration) var(--timing-function),
-        box-shadow var(--duration) var(--timing-function),
-        color var(--duration) var(--timing-function);
-    
-    &:hover {
-        background-color: var(--focus-color);
-    
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
-    
-        color: var(--white-color);
-    }
-    
-    &:focus {
-        background-color: var(--focus-color);
+  transition: background-color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function),
+    color var(--duration) var(--timing-function);
 
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover {
+    background-color: var(--focus-color);
 
-        color: var(--white-color);
-    }
-    
-    &--first {
-        padding: 6px 25px;
-    }
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    color: var(--white-color);
+  }
+
+  &:focus {
+    background-color: var(--focus-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    color: var(--white-color);
+  }
+
+  &--first {
+    padding: 6px 25px;
+  }
 }
