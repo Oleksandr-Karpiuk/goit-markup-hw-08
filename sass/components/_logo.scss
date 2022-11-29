@@ -1,26 +1,39 @@
 .page-logo {
-    display: block;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-family: var(--logo-font);
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+
+  color: var(--black-color);
+
+  &--footer {
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
 
-    font-family: var(--logo-font);
     font-size: 26px;
     line-height: 1.2;
-    text-decoration: none;
-
-    color: var(--black-color);
-    
-    &--footer {
-        margin-bottom: 20px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+  }
 }
 
 .page-logo__style {
-    color: var(--focus-color);
+  color: var(--focus-color);
 
-    &--color {
-        color: var(--white-color);
-    }
+  &--color {
+    color: var(--white-color);
+  }
 }
