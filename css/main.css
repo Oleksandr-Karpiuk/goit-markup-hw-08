@@ -1309,6 +1309,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  width: 100vw;
 }
 
 .mobile-socials__item:not(:last-child) {
