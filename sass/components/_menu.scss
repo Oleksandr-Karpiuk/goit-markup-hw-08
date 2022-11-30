@@ -4,6 +4,8 @@
   left: 0;
   z-index: 999;
 
+  overflow-y: scroll;
+
   display: flex;
   flex-direction: column;
 
@@ -15,6 +17,10 @@
 
   transform: translateX(100%);
   transition: transform var(--duration) var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
