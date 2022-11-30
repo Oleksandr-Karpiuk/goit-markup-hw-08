@@ -1283,6 +1283,11 @@ ul {
   color: var(--main-color);
   text-decoration: none;
 }
+@media screen and (max-width: 479.98px) {
+  .mobile-menu__link {
+    font-size: 8.333vw;
+  }
+}
 
 .mobile-menu__link--active {
   color: var(--focus-color);
@@ -1304,10 +1309,20 @@ ul {
   color: var(--focus-color);
   text-decoration: none;
 }
+@media screen and (max-width: 479.98px) {
+  .mobile-contacts__link {
+    font-size: 7.083vw;
+  }
+}
 
 .mobile-contacts__link--different {
   font-size: 24px;
   color: var(--secondary-color);
+}
+@media screen and (max-width: 479.98px) {
+  .mobile-contacts__link--different {
+    font-size: 5vw;
+  }
 }
 
 .mobile-socials {
@@ -1331,4 +1346,9 @@ ul {
   letter-spacing: 0.02em;
   color: var(--focus-color);
   text-decoration: none;
+}
+@media screen and (max-width: 479.98px) {
+  .mobile-socials_link {
+    font-size: 3.35vw;
+  }
 }/*# sourceMappingURL=main.css.map */

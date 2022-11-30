@@ -86,6 +86,10 @@
 
   color: var(--main-color);
   text-decoration: none;
+
+  @media screen and (max-width: 479.98px) {
+    font-size: 8.333vw;
+  }
 }
 
 .mobile-menu__link--active {
@@ -108,12 +112,20 @@
 
   color: var(--focus-color);
   text-decoration: none;
+
+  @media screen and (max-width: 479.98px) {
+    font-size: 7.083vw;
+  }
 }
 
 .mobile-contacts__link--different {
   font-size: 24px;
 
   color: var(--secondary-color);
+
+  @media screen and (max-width: 479.98px) {
+    font-size: 5vw;
+  }
 }
 
 .mobile-socials {
@@ -136,4 +148,8 @@
 
   color: var(--focus-color);
   text-decoration: none;
+
+  @media screen and (max-width: 479.98px) {
+    font-size: 3.35vw;
+  }
 }
