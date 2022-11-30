@@ -112,9 +112,8 @@
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-
-  width: 100vw;
 }
 
 .mobile-socials__item:not(:last-child) {

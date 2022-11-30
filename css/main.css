@@ -1308,8 +1308,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
-  width: 100vw;
 }
 
 .mobile-socials__item:not(:last-child) {
