@@ -1,88 +1,161 @@
 .page-footer {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    background-color: var(--hero-footer-bcg);
+  background-color: var(--hero-footer-bcg);
+
+  @media screen and (max-width: 767.98px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
 }
 
 .footer-flex {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+  }
+}
+
+.address-footer {
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
 }
 
 .address-footer__item:not(:last-child) {
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
+  }
 }
 
 .address-footer__link {
-    display: block;
+  display: block;
 
-    font-style: normal;
-    text-decoration: none;
-    color: var(--address-color);
+  font-style: normal;
+  text-decoration: none;
+  color: var(--address-color);
 
-    transition: color var(--duration) var(--timing-function);
+  transition: color var(--duration) var(--timing-function);
 
-    &:hover,
-    &:focus {
-        color: var(--focus-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--focus-color);
+  }
 
-    &--color {
-        color: var(--white-color);
-    }
+  &--color {
+    color: var(--white-color);
+  }
+}
+
+.page-footer__wrapper {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    text-align: center;
+  }
 }
 
 .page-footer__text {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--white-color);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
 
-    &--weight {
-        font-weight: 700;
-    }
+  &--weight {
+    font-weight: 700;
+  }
 }
 
 .page-footer__form {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: flex-end;
     gap: 12px;
+  }
 }
 
 .page-footer__input {
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
+  height: 50px;
+  padding-left: 16px;
 
+  font-size: 16px;
+
+  color: var(--address-color);
+  background-color: var(--hero-footer-bcg);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color var(--duration) var(--timing-function);
+
+  &::placeholder {
     font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
     color: var(--address-color);
-    background-color: var(--hero-footer-bcg);
+  }
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+  &:focus-within {
+    outline: transparent;
 
-    transition: border-color var(--duration) var(--timing-function);
+    border-color: var(--focus-color);
+  }
 
-    &::placeholder {
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-    
-        color: var(--address-color);
-    }
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    &:focus-within {
-        outline: transparent;
-    
-        border-color: var(--focus-color);
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
