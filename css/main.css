@@ -1284,7 +1284,6 @@ ul {
   padding: 0;
   background-color: transparent;
   border: none;
-  fill: #000000;
   cursor: pointer;
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
