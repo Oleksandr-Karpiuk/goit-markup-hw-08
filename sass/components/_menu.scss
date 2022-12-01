@@ -37,6 +37,7 @@
   background-color: transparent;
   border: none;
 
+  color: black;
   cursor: pointer;
 
   transition: color var(--duration) var(--timing-function);
@@ -52,7 +53,7 @@
 }
 
 .menu-toggle__icons {
-  fill: #000000;
+  fill: currentColor;
 }
 
 .menu-container .menu-toggle {

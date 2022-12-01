@@ -151,8 +151,21 @@ ul {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+}
+@media screen and (max-width: 1199.98px) {
+  .modal__title {
+    width: 100%;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .main-button {
@@ -920,8 +933,6 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: var(--white-color);
@@ -933,9 +944,21 @@ ul {
   transition: transform var(--duration) var(--timing-function), opacity var(--duration) var(--timing-function);
   transition: transform var(--duration) var(--timing-function), opacity var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
 }
+@media screen and (max-width: 1199.98px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 
 .modal__close-icon {
-  fill: currentColor;
+  fill: #000000;
 }
 
 .modal__group {
@@ -994,7 +1017,7 @@ ul {
   left: 12px;
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
-  fill: currentColor;
+  fill: #212121;
 }
 .modal__label:focus-within .modal__icons {
   color: var(--focus-color);
@@ -1238,6 +1261,7 @@ ul {
   padding: 0;
   background-color: transparent;
   border: none;
+  color: black;
   cursor: pointer;
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
@@ -1252,7 +1276,7 @@ ul {
 }
 
 .menu-toggle__icons {
-  fill: #000000;
+  fill: currentColor;
 }
 
 .menu-container .menu-toggle {
