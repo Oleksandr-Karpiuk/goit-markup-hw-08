@@ -292,11 +292,6 @@ ul {
   text-decoration: none;
   color: var(--black-color);
 }
-.page-logo--footer {
-  margin-bottom: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 @media screen and (min-width: 768px) {
   .page-logo {
     padding-top: 26px;
@@ -310,6 +305,12 @@ ul {
     font-size: 26px;
     line-height: 1.2;
   }
+}
+
+.page-logo.page-logo--footer {
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .page-logo__style {
