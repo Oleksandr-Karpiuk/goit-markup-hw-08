@@ -1,98 +1,142 @@
 .portfolio__list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  gap: 8px;
 
-    &:not(:last-child) {
-        margin-bottom: 50px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 40px;
     }
-}
 
-.portfolio__item-button:not(:first-child) {
-    margin-left: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    max-width: 334px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portfolio__card-list {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 30px;
+  }
 }
 
 .portfolio__card-item {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 30px * 2) / 3);
+  }
+}
+
+.portfolio__card-item:not(:last-child) {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio__card-link {
-    display: block;
-    text-decoration: none;
+  display: block;
+  text-decoration: none;
 
-    transition: box-shadow var(--duration) var(--timing-function);
+  transition: box-shadow var(--duration) var(--timing-function);
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
 
-        & .portfolio__overlay {
-            transform: translateY(0);
-        }
+    & .portfolio__overlay {
+      transform: translateY(0);
     }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .portfolio__wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio__image {
-    display: block;
-    max-width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    transform: translateY(100%);
+  transform: translateY(100%);
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background-color: var(--overlay-portfolio);
+  background-color: var(--overlay-portfolio);
 
-    transition: transform var(--duration) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
 }
 
 .portfolio__overlay-description {
-    padding-left: 24px;
-    padding-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 
-    font-size: 18px;
-    line-height: 1.56;
+  font-size: 18px;
+  line-height: 1.56;
 
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .portfolio__card-description {
-    padding: 20px 24px;
-    border: 1px solid #eeeeee;
-    border-top: none;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-grow: 1;
+  }
 }
 
 .portfolio__card-title {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--main-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
 }
 
 .portfolio__card-text {
-    font-size: 16px;
-    line-height: 1.88;
-    color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-color);
 }
