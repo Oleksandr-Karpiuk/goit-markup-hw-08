@@ -1338,8 +1338,8 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
